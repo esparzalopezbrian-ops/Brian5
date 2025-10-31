@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CETis 47 Gómez Palacio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="images.jfif" alt="Logo CETis 47" class="logo-cetis">
+      <h1 class="site-title">Centro de Estudios Tecnológicos Industrial y de Servicios No. 47 – Gómez Palacio</h1>
+      <button id="btn-menu" class="hamburger" aria-label="Abrir menú" aria-controls="panel-nav" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <aside id="panel-nav" class="panel-nav" aria-hidden="true">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#carreras">Carreras</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#carreras">Carreras</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio">
+    <article class="container">
+      <section class="carrusel">
+        <div class="slide active"><img src="https://cetis47.edu.mx/_assets/media/54ef90b232464d7923d2ba801bb40bb9.jpg" alt="Alumnos CETis 47"><div class="caption">Alumnos y directivos del CETis 47</div></div>
+        <div class="slide"><img src="plantel.jfif" alt="plantel"><div class="caption">plantel</div></div>
+        <div class="slide"><img src="entrada.jpg" alt="entrada"><div class="caption">entrada</div></div>
+        <div class="slide"><img src="audio visual.webp" alt="audio visual"><div class="caption">audio visual</div></div>
+        <div class="slide"><img src="gg.jfif" alt=""><div class="caption"></div></div>
+
+        <div class="indicadores">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+        </div>
+      </section>
+
+      <section id="historia" class="info">
+        <h2>Historia del CETis 47</h2>
+        <p>El <strong>CETis No. 47</strong> fue fundado en <strong>Gómez Palacio, Durango</strong>, con el propósito de brindar educación tecnológica de calidad a los jóvenes de la región Lagunera. A lo largo de los años, se ha consolidado como una de las instituciones más reconocidas del sistema educativo DGETI, formando generaciones de técnicos bachilleres comprometidos con el desarrollo económico y social del país.</p>
+
+        <h3>Misión</h3>
+        <p>Formar estudiantes competentes en el ámbito académico y técnico, capaces de integrarse al sector productivo o continuar estudios superiores, fomentando valores de ética, innovación y compromiso social.</p>
+
+        <h3>Visión</h3>
+        <p>Ser una institución líder en educación tecnológica de nivel medio superior, reconocida por su excelencia académica, innovación y contribución al desarrollo sustentable de la región Lagunera.</p>
+      </section>
+
+      <section id="carreras" class="carreras">
+        <h2>Especialidades Técnicas</h2>
+        <div class="grid-carreras">
+          <div class="card"><h4>Programación</h4><p>Desarrollo de software, aplicaciones web y bases de datos modernas.</p></div>
+          <div class="card"><h4>Contabilidad</h4><p>Registro, control y análisis financiero de organizaciones con herramientas tecnológicas.</p></div>
+          <div class="card"><h4>Mantenimiento Industrial</h4><p>Mantenimiento preventivo y correctivo de maquinaria y sistemas industriales.</p></div>
+          <div class="card"><h4>Administración de Recursos Humanos</h4><p>Gestión de talento humano, capacitación y desarrollo organizacional.</p></div>
+          <div class="card"><h4>Refrigeración y Climatización</h4><p>Instalación y mantenimiento de sistemas con eficiencia energética y enfoque ecológico.</p></div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contacto">
+        <h2>Contacto y Ubicación</h2>
+        <p><strong>Dirección:</strong> Calle Prolongación Ignacio Allende s/n, Col. El Consuelo, Gómez Palacio, Durango, México.</p>
+        <p><strong>Teléfono:</strong> (871) 714 1680</p>
+        <p><strong>Correo institucional:</strong> contacto@cetis47.edu.mx</p>
+        <p><strong>Sitio web:</strong> <a href="https://cetis47.edu.mx" target="_blank">https://cetis47.edu.mx</a></p>
+
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.199926037537!2d-103.50598628537165!3d25.578824883723356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fc7f43e531b01%3A0x75f534a4e0bb9c56!2sCETis%2047!5e0!3m2!1ses!2smx!4v1672535190047!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="social">
+          <a href="https://www.facebook.com/cetis47oficial" target="_blank">Facebook</a>
+          <a href="https://www.youtube.com/@cetis47oficial" target="_blank">YouTube</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Centro de Estudios Tecnológicos Industrial y de Servicios No. 47 – Gómez Palacio | Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let index = 0;
+    setInterval(()=>{
+      slides[index].classList.remove('active');
+      dots[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+    },4000);
+
+    document.getElementById('btn-menu').addEventListener('click',()=>{
+      document.getElementById('panel-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
